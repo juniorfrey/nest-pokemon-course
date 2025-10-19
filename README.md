@@ -40,3 +40,8 @@ services:
  ```
  3. Verificar que la base de datos se haya ejecutado correctamente
 
+ 4. Reconstruir la base de datos con la semilla (Solo para ambiente de desarrollo)
+ ```
+ GET http://localhost:3000/api/v2/seed
+ ```
+
