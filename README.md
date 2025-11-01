@@ -6,7 +6,7 @@
 [circleci-url]: https://circleci.com/gh/nestjs/nest
 
   <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
+<p align="center">
 <a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
 <a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
 <a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
@@ -38,10 +38,13 @@ services:
  ```
  docker-compose up -d
  ```
- 3. Verificar que la base de datos se haya ejecutado correctamente
-
- 4. Reconstruir la base de datos con la semilla (Solo para ambiente de desarrollo)
+ 3. Reconstruir la base de datos con la semilla (Solo para ambiente de desarrollo)
  ```
  GET http://localhost:3000/api/v2/seed
  ```
 
+ 4. Verificar que la base de datos se haya reconstruido correctamente
+ ```
+ GET http://localhost:3000/api/v2/pokemon
+```
+5. clonar archivo __.env.example__ y renombrarlo a __.env__
